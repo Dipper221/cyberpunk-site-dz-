@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>NEXUS | CONTRACTS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="tours-page">
+    <div class="crt-lines"></div>
+    <div class="vignette"></div>
+    <div class="grid-bg"></div>
+    
+    <div class="cursor-dot"></div>
+    <div class="cursor-circle"></div>
+
+    <header>
+        <div class="nav-wrapper">
+            <div class="logo hacker-text" data-value="NEXUS_OS">NEXUS_OS</div>
+            <nav>
+                <a href="index.html" class="nav-item" data-text="ГЛАВНАЯ">ГЛАВНАЯ</a>
+                <a href="tours.html" class="active nav-item" data-text="МИССИИ">МИССИИ</a>
+                <a href="contacts.html" class="nav-item" data-text="СВЯЗЬ">СВЯЗЬ</a>
+            </nav>
+            <div class="sys-controls">
+                <button id="theme-btn" class="icon-btn">🎨</button>
+                <button id="sound-btn" class="icon-btn">🔇</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="scroll-stage">
+        <h2 class="section-title hacker-text" data-value="ДОСТУПНЫЕ КОНТРАКТЫ">ДОСТУПНЫЕ КОНТРАКТЫ</h2>
+
+        <div class="dashboard-panel fade-in-up">
+            <div class="search-wrapper">
+                <input type="text" id="search-input" placeholder="ПОИСК ЦЕЛИ...">
+                <div class="search-icon">🔍</div>
+            </div>
+            <div class="filter-wrapper">
+                <button class="filter-btn active" data-filter="all">ВСЕ</button>
+                <button class="filter-btn" data-filter="easy">ЛЕГКО</button>
+                <button class="filter-btn" data-filter="hard">СЛОЖНО</button>
+            </div>
+        </div>
+
+        <div class="cards-grid">
+            <div class="cyber-card pop-in" style="animation-delay: 0.1s;" data-cat="easy" data-title="NEO TOKYO">
+                <h3>NEO TOKYO</h3>
+                <div class="card-stats">
+                    <span>СЛОЖНОСТЬ</span> <span class="stat-easy">D</span>
+                </div>
+                <div class="price">5,000 ED</div>
+                <button class="cyber-btn small open-modal" data-target="modal-1">ДЕТАЛИ</button>
+            </div>
+
+            <div class="cyber-card pop-in" style="animation-delay: 0.2s;" data-cat="hard" data-title="MARS OUTPOST">
+                <h3>MARS OUTPOST</h3>
+                <div class="card-stats">
+                    <span>СЛОЖНОСТЬ</span> <span class="stat-med">B</span>
+                </div>
+                <div class="price">12,000 ED</div>
+                <button class="cyber-btn small open-modal" data-target="modal-2">ДЕТАЛИ</button>
+            </div>
+
+            <div class="cyber-card pop-in" style="animation-delay: 0.3s;" data-cat="hard" data-title="ARASAKA TOWER">
+                <h3>ARASAKA TOWER</h3>
+                <div class="card-stats">
+                    <span>СЛОЖНОСТЬ</span> <span class="stat-hard">S+</span>
+                </div>
+                <div class="price">∞ ED</div>
+                <button class="cyber-btn small open-modal" data-target="modal-3">ДЕТАЛИ</button>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal" id="modal-1">
+        <h3>NEO TOKYO</h3>
+        <p>Задача: Доставка данных.</p>
+        <button class="cyber-btn full-width close-modal">ПРИНЯТЬ</button>
+    </div>
+    <div class="modal" id="modal-2">
+        <h3>MARS OUTPOST</h3>
+        <p>Задача: Саботаж.</p>
+        <button class="cyber-btn full-width close-modal">ПРИНЯТЬ</button>
+    </div>
+    <div class="modal" id="modal-3">
+        <h3>ARASAKA</h3>
+        <p>Задача: Полный взлом.</p>
+        <button class="cyber-btn full-width close-modal">ПРИНЯТЬ</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

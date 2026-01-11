@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>NEXUS | LINK</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="contacts-page">
+    <div class="crt-lines"></div>
+    <div class="vignette"></div>
+    <div class="grid-bg"></div>
+    
+    <div class="cursor-dot"></div>
+    <div class="cursor-circle"></div>
+
+    <header>
+        <div class="nav-wrapper">
+            <div class="logo hacker-text" data-value="NEXUS_OS">NEXUS_OS</div>
+            <nav>
+                <a href="index.html" class="nav-item" data-text="ГЛАВНАЯ">ГЛАВНАЯ</a>
+                <a href="tours.html" class="nav-item" data-text="МИССИИ">МИССИИ</a>
+                <a href="contacts.html" class="active nav-item" data-text="СВЯЗЬ">СВЯЗЬ</a>
+            </nav>
+            <div class="sys-controls">
+                <button id="theme-btn" class="icon-btn">🎨</button>
+                <button id="sound-btn" class="icon-btn">🔇</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="center-stage">
+        <div class="holo-container fade-in-up">
+            <div class="holo-header">
+                <h2 class="hacker-text" data-value="ШИФРОВАННЫЙ КАНАЛ">ШИФРОВАННЫЙ КАНАЛ</h2>
+            </div>
+            
+            <div class="holo-body">
+                <div class="input-float-group">
+                    <input type="text" id="inp-name" required autocomplete="off">
+                    <label>ИМЯ АГЕНТА</label>
+                    <div class="input-border"></div>
+                </div>
+
+                <div class="input-float-group">
+                    <input type="text" id="inp-id" required autocomplete="off">
+                    <label>ID ЧИПА</label>
+                    <div class="input-border"></div>
+                </div>
+
+                <button id="send-btn" class="cyber-btn full-width">
+                    <span class="btn-text">УСТАНОВИТЬ СВЯЗЬ</span>
+                    <span class="btn-glitch"></span>
+                </button>
+            </div>
+            
+            <div id="status-log"></div>
+            <div class="holo-footer">SECURE CONNECTION ESTABLISHED</div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
